@@ -2,9 +2,9 @@
 Final exam, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Zachary Duncan.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -213,9 +213,18 @@ def problem5(x):
       :type x:    int
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    #I accept that I am going to lose points here due to not using a "While True" loop, but I am not sure how to do a "While True" loop inside a "While True" loop.
+    if x > 2:
+        for k in range(x,99999999999999,1):
+            if is_prime(k) == is_prime(23):
+                if is_prime(sum_of_digits(k)) == is_prime(23):
+                    print(k)
+                    return k
+
+
 
 
 ###############################################################################

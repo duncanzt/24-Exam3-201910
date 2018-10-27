@@ -2,9 +2,9 @@
 Exam 3, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Zachary Duncan.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -86,9 +86,16 @@ def problem1(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    #range has to start at the length of the list * 1/3, and end at the length of the list * 2/3
+    total = 0
+    if len(numbers)%3 == 0:
+        for k in range(len(numbers)//3,2*len(numbers)//3,1):
+            total = total + numbers[k]
+        return total
+    #I can't get it to work, but I know the method, I am very frustrated and moving on.
 
 
 ###############################################################################
